@@ -1,17 +1,16 @@
+$primaryBlue: #4288E5;
+
 #main-nav {
     width: 100%;
     height: 75px;
-    /* background-color: #dae; */
 }
 
 #main-nav nav {
     width: 100%;
     height: 100%;
-    /* background-color: #ebe; */
     margin: 0 auto;
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #e8e8e8;
 }
 
 #main-nav nav span.logo {
@@ -72,14 +71,18 @@ span.dropdown-link:hover div.dropdown-links {
 .nav-link a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #4288E5;
+    color: $primaryBlue;
     font-weight: 400;
 }
 
-.nav-link.auth a {
-    background: #4288E5;
-    padding: 10px 15px;
+.nav-link a{
     color: white;
+}
+
+.nav-link.auth a {
+    background: white;
+    padding: 10px 15px;
+    color: $primaryBlue;
     border-radius: 8px;
 }
 
@@ -114,7 +117,7 @@ span.dropdown-link:hover div.dropdown-links {
         font-size: 24px;
         background-color: transparent;
         border: none;
-        color: #4288E5;
+        color: white;
     }
     div.nav-links.toggled {
         display: block;
@@ -132,6 +135,10 @@ span.dropdown-link:hover div.dropdown-links {
         margin: 30px 0;
         text-align: center;
         float: none;
+    }
+
+    .nav-link a {
+        color: $primaryBlue;
     }
     .toggled-top-bar {
         display: block;
@@ -152,7 +159,7 @@ span.dropdown-link:hover div.dropdown-links {
         font-size: 24px;
         text-align: center;
         margin-top: 10px;
-        color: #4288E5;
+        color: $primaryBlue;
         vertical-align: middle;
     }
     .dropdown-links {
@@ -166,3 +173,4 @@ span.dropdown-link:hover div.dropdown-links {
         margin: 0;
     }
 }
+

@@ -1,0 +1,116 @@
+#search {
+    width: 75%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#search h1 {
+    color: white;
+    text-align: center;
+}
+
+#search .search-input {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#search .search-input-data {
+    height: 45px;
+    width: 90%;
+    display: inline-block;
+    margin: 10px auto;
+}
+
+*:focus {
+    outline: none;
+}
+
+#search .search-input-data input {
+    height: 45px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+}
+
+#search .search-btn {
+    width: 10%;
+    margin: 10px auto;
+}
+
+#search .search-btn button {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border: none;
+    text-align: center;
+    color: #4288E5;
+    height: 45px;
+    font-size: 18px;
+}
+
+
+.search-input-data input::-webkit-input-placeholder {
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .search-input-data input:-ms-input-placeholder {
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .search-input-data input:-moz-placeholder {
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .search-input-data input::-moz-placeholder {
+    font-family: 'Rubik', sans-serif;
+  }
+
+  .autocom-results {
+      display: none;
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+    margin-top: 0;
+    position: relative;
+    top: -8px;
+    height: 150px;
+    overflow-x: scroll;
+  }
+
+  .autocom-results span {
+    display: block;
+    height: 30px;
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-bottom: 1px solid #EEEEEE;
+    border-top: 1px solid #EEEEEE;
+    vertical-align: middle;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+  #search .autocom-results.shown {
+      display: block;
+  }
+
+
+  @media screen and (max-width: 450px) {
+      #search, #search .search-input, .autocom-results {
+        width: 90%;
+      }
+      #search .search-input-data {
+        width: 85%;
+      }
+
+      #search .search-btn {
+        width: 15%;
+      }
+  }

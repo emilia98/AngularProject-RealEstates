@@ -1,0 +1,21 @@
+<div id="search">
+    <h1>Find you new home today</h1>
+    <div class="search-input">
+        <form class="search-input-data">
+            <input (focus)="onInputFocus()" (focusout)="onInputOutFocus()" type="text" name="location" id="location" placeholder="Search by Location or ZIP Code">
+        </form>
+        <div class="search-btn">
+            <button type="button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        
+    </div>
+    <div [ngClass]="{ shown: inputFocused }" class="autocom-results" id="autocom-results">
+        <span>aaaaaa</span>
+        <span>bbbbbb</span>
+        <span>cccccc</span>
+        <span>dddddd</span>
+        <span>eeeeee</span>
+    </div>
+</div>
