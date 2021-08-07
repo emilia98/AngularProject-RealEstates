@@ -1,0 +1,40 @@
+<div id="main-nav">
+    <nav>
+        <span class="logo">
+            <img src="./assets/homey-logo-svg.svg" alt="homey-logo" />
+        </span>
+        <div id="tgl">
+            <button type="button" (click)="toggleNavBar()"><i class="fas fa-bars"></i></button>
+        </div>
+        <div [ngClass]="{'toggled': isOpened}" class="nav-links" id="toggled-nav">
+            <div class="toggled-top-bar">
+                <span class="logo toggled-logo">
+                    <img src="./assets/homey-logo-svg.svg" alt="homey-logo" />
+                </span>
+                <span class="close" (click)="toggleNavBar()">
+                    <i class="fas fa-times"></i>
+                </span>
+            </div>
+            <span class="nav-link auth">
+                <a href="#">Sign Up</a>
+            </span>
+            <span class="nav-link">
+                <a href="#">Discover</a>
+            </span>
+            <span class="nav-link dropdown-link">
+                <a href="#" class="dropdown-link">Sell</a>
+                <div class="dropdown-links">
+                    <h3>Sell your home</h3>
+                    <a href="#">List properties</a>
+                    <a href="#">List properties</a>
+                </div>
+            </span>
+            <span class="nav-link">
+                <a href="#">Buy</a>
+            </span>
+            <span class="nav-link">
+                <a href="#">RENT</a>
+            </span>
+        </div>
+    </nav>
+</div>

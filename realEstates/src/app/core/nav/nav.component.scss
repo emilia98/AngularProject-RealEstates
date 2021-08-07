@@ -1,0 +1,168 @@
+#main-nav {
+    width: 100%;
+    height: 75px;
+    /* background-color: #dae; */
+}
+
+#main-nav nav {
+    width: 100%;
+    height: 100%;
+    /* background-color: #ebe; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #e8e8e8;
+}
+
+#main-nav nav span.logo {
+    margin-left: 20px;
+    width: 20%;
+}
+
+#main-nav nav span.logo>img {
+    height: 35px;
+}
+
+div.nav-links {
+    display: inline-block;
+    width: 80%;
+    margin-right: 20px;
+}
+
+.nav-link {
+    float: right;
+    padding: 30px 10px;
+}
+
+.nav-link.dropdown-link:hover {
+    display: inline-block;
+}
+
+/*
+.dropdown-links:hover {
+    display: inline-block;
+} */
+
+.dropdown-links {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 66px;
+    left: 0%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+}
+
+.dropdown-link .dropdown-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.dropdown-link {
+    position: relative;
+}
+
+span.dropdown-link:hover div.dropdown-links {
+    display: inline-block;
+}
+
+.nav-link a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #4288E5;
+    font-weight: 400;
+}
+
+.nav-link.auth a {
+    background: #4288E5;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 8px;
+}
+
+.toggled-top-bar {
+    display: none;
+}
+
+#tgl {
+    display: none;
+}
+
+.dropdown-links h3 {
+    padding: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+    div.nav-links {
+        display: none;
+    }
+    span.nav-link {
+        padding: 0;
+    }
+    #tgl {
+        display: inline-block;
+        width: 70%;
+    }
+    #tgl button {
+        float: right;
+        font-size: 24px;
+        background-color: transparent;
+        border: none;
+        color: #4288E5;
+    }
+    div.nav-links.toggled {
+        display: block;
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 0;
+        background-color: white;
+        padding-top: 10px;
+    }
+    .nav-link {
+        display: block;
+        margin: 30px 0;
+        text-align: center;
+        float: none;
+    }
+    .toggled-top-bar {
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #main-nav .nav-links.toggled .toggled-logo {
+        text-align: center;
+        margin: 0;
+        margin-top: 20px;
+        width: 70%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .nav-links.toggled .toggled-top-bar .close {
+        width: 25%;
+        display: inline-block;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 10px;
+        color: #4288E5;
+        vertical-align: middle;
+    }
+    .dropdown-links {
+        box-shadow: none;
+        top: 30px;
+        position: initial;
+        width: 100%;
+        font-size: 10px;
+    }
+    .nav-link.dropdown-link {
+        margin: 0;
+    }
+}
